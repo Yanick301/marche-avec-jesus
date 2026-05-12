@@ -12,19 +12,19 @@ export default function PastEditions() {
   const editions = [
     {
       year: "2023",
-      title: "3ème Édition : La Lumière",
+      title: "3ème Édition : ",
       desc: "Un rassemblement record avec plus de 8 000 participants à travers les rues d'Abomey.",
       img: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000"
     },
     {
       year: "2022",
-      title: "2ème Édition : L'Unité",
+      title: "2ème Édition : ",
       desc: "La consolidation du mouvement et l'ouverture aux délégations nationales.",
       img: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000"
     },
     {
       year: "2021",
-      title: "1ère Édition : La Genèse",
+      title: "1ère Édition : ",
       desc: "Le début de l'aventure avec les pionniers de la marche à Abomey.",
       img: "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000"
     }
