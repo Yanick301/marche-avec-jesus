@@ -1,10 +1,11 @@
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 import { COLORS, EVENT_DETAILS } from "../../constants";
 import Button from "../ui/Button";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#F1F5F9]">
+    <section className="relative min-h-screen flex items-start justify-center pt-40 pb-20 md:pt-60 md:pb-32 px-6 overflow-hidden bg-[#F1F5F9]">
       {/* Background with soft image and organic masks */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-fixed bg-center transition-transform duration-1000 scale-105"
@@ -15,7 +16,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#005BA1]/40 via-[#F1F5F9]/20 to-[#F1F5F9]" />
       </div>
 
-      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto pt-20">
+      <div className="relative z-10 text-center px-4 max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.98 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -33,9 +34,9 @@ export default function Hero() {
             </span>
           </motion.div>
           
-          <h1 className="text-7xl md:text-[140px] font-serif font-bold text-[#0F172A] mb-10 leading-[0.82] tracking-tighter mix-blend-multiply">
-            Marche avec <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#005BA1] to-[#2E7D32] italic">JESUS</span>
+          <h1 className="text-6xl md:text-[140px] font-title font-black text-[#0F172A] mb-10 leading-[0.8] tracking-tighter">
+            <span className="font-script text-[#2E7D32] lowercase italic capitalize tracking-normal block mb-4 md:mb-0">Marche</span>
+            avec <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#005BA1] to-[#2E7D32]">JESUS</span>
           </h1>
 
           <p className="text-xl md:text-2xl text-slate-700/80 mb-16 max-w-3xl mx-auto leading-relaxed font-light italic">
@@ -43,21 +44,23 @@ export default function Hero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-10">
-            <Button 
-              onClick={() => document.getElementById('register')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto !rounded-full !bg-[#005BA1] !text-white !px-16 !py-10 !text-sm uppercase tracking-widest font-black shadow-[0_25px_60px_rgba(0,91,161,0.4)] hover:shadow-[0_25px_60px_rgba(0,91,161,0.6)] transition-all transform hover:-translate-y-2"
-            >
-              Participer gratuitement
-            </Button>
-            <button 
-              onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
-              className="flex items-center gap-6 text-[#0F172A] font-black group transition-all"
-            >
-              <div className="w-16 h-16 rounded-full border-2 border-[#005BA1]/10 flex items-center justify-center group-hover:border-[#005BA1] group-hover:bg-[#005BA1]/5 transition-all duration-500">
-                <div className="w-3 h-3 bg-[#005BA1] rounded-full shadow-[0_0_10px_#005BA1]" />
-              </div>
-              <span className="text-xs uppercase tracking-[0.3em]">Découvrir</span>
-            </button>
+            <Link to="/4eme-edition">
+              <Button 
+                className="w-full sm:w-auto !rounded-full !bg-[#005BA1] !text-white !px-16 !py-10 !text-sm uppercase tracking-widest font-black shadow-[0_25px_60px_rgba(0,91,161,0.4)] hover:shadow-[0_25px_60px_rgba(0,91,161,0.6)] transition-all transform hover:-translate-y-2"
+              >
+                Participer gratuitement
+              </Button>
+            </Link>
+            <Link to="/a-propos">
+              <button 
+                className="flex items-center gap-6 text-[#0F172A] font-black group transition-all"
+              >
+                <div className="w-16 h-16 rounded-full border-2 border-[#005BA1]/10 flex items-center justify-center group-hover:border-[#005BA1] group-hover:bg-[#005BA1]/5 transition-all duration-500">
+                  <div className="w-3 h-3 bg-[#005BA1] rounded-full shadow-[0_0_10px_#005BA1]" />
+                </div>
+                <span className="text-xs uppercase tracking-[0.3em]">Découvrir la Marche</span>
+              </button>
+            </Link>
           </div>
 
           {/* Floating Stat Cards Integration */}
@@ -69,17 +72,17 @@ export default function Hero() {
           >
             <div className="text-center group">
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-3 group-hover:text-[#005BA1] transition-colors">Date</p>
-              <p className="text-3xl font-serif font-bold text-[#0F172A]">20 Mai</p>
+              <p className="text-3xl font-title font-bold text-[#0F172A]">20 Mai</p>
             </div>
             <div className="w-px h-12 bg-slate-200" />
             <div className="text-center group">
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-3 group-hover:text-[#005BA1] transition-colors">Lieu</p>
-              <p className="text-3xl font-serif font-bold text-[#0F172A]">Abomey</p>
+              <p className="text-3xl font-title font-bold text-[#0F172A]">Abomey</p>
             </div>
             <div className="w-px h-12 bg-slate-200" />
             <div className="text-center group">
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-3 group-hover:text-[#005BA1] transition-colors">Heure</p>
-              <p className="text-3xl font-serif font-bold text-[#0F172A]">08:00</p>
+              <p className="text-3xl font-title font-bold text-[#0F172A]">08:00</p>
             </div>
           </motion.div>
         </motion.div>

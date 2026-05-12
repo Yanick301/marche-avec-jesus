@@ -1,6 +1,8 @@
 import { motion } from "motion/react";
 import { Youtube, Facebook, Instagram, Twitter, Heart } from "lucide-react";
+import { Link } from "react-router-dom";
 import { EVENT_DETAILS, COLORS } from "../../constants";
+import Logo from "../ui/Logo";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -17,11 +19,11 @@ export default function Footer() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-4 gap-24 mb-32">
           <div className="col-span-1 lg:col-span-2">
-            <a href="#" className="inline-block mb-12">
-              <img src="input_file_0.png" alt="Logo" className="h-20 w-auto" />
-            </a>
-            <h2 className="text-4xl font-serif font-bold text-[#0F172A] mb-10 leading-tight">
-              Portons ensemble la <br /> <span className="text-[#005BA1] italic">lumière</span> du Messie.
+            <Link to="/" className="inline-block mb-12">
+              <Logo dark className="!gap-4 scale-125 origin-left" />
+            </Link>
+            <h2 className="text-4xl font-title font-black text-[#0F172A] mb-10 leading-tight">
+              Portons ensemble la <br /> <span className="font-script text-[#005BA1] italic lowercase capitalize">lumière</span> du Messie.
             </h2>
             <div className="flex gap-16">
               <div>
@@ -38,11 +40,17 @@ export default function Footer() {
           <div>
             <h4 className="text-[10px] uppercase tracking-[0.4em] font-black text-slate-400 mb-12">Explorer</h4>
             <ul className="space-y-6">
-              {["L'Événement", "Programme", "Localisation", "Participer"].map((link) => (
-                <li key={link}>
-                  <a href="#" className="text-xs uppercase tracking-widest font-black text-[#0F172A] hover:text-[#005BA1] transition-all">
-                    {link}
-                  </a>
+              {[
+                { name: "L'Événement", href: "/a-propos" },
+                { name: "Archives", href: "/editions-precedentes" },
+                { name: "4ème Édition", href: "/4eme-edition" },
+                { name: "Galerie", href: "/galerie" },
+                { name: "Blog", href: "/blog" },
+              ].map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className="text-xs uppercase tracking-widest font-black text-[#0F172A] hover:text-[#005BA1] transition-all">
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -58,9 +66,9 @@ export default function Footer() {
                 +229 01 00 00 00 01
               </li>
               <li className="pt-6">
-                <span className="inline-block px-4 py-2 border border-blue-50 bg-blue-50/50 text-[#005BA1] text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
+                <Link to="/contact" className="inline-block px-4 py-2 border border-blue-50 bg-blue-50/50 text-[#005BA1] text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
                   Assistance Continue
-                </span>
+                </Link>
               </li>
             </ul>
           </div>

@@ -65,7 +65,7 @@ export default function Registration() {
             <div className="w-24 h-24 bg-[#E3F2FD] text-[#005BA1] rounded-full flex items-center justify-center mx-auto mb-10 shadow-inner">
               <CheckCircle2 className="w-12 h-12" />
             </div>
-            <h2 className="text-4xl font-serif font-bold text-[#0F172A] mb-6 tracking-tight">C'est confirmé !</h2>
+            <h2 className="text-4xl font-title font-black text-[#0F172A] mb-6 tracking-tight">C'est confirmé !</h2>
             <p className="text-slate-500 text-lg mb-12 leading-relaxed italic">
               "Merci de nous rejoindre. Votre participation gratuite est bien enregistrée. Nous avons hâte de marcher avec vous."
             </p>
@@ -95,8 +95,8 @@ export default function Registration() {
             <span className="text-[10px] uppercase tracking-[0.5em] font-black text-blue-100/60 mb-8 block">
               INVITATION À TOUS
             </span>
-            <h2 className="text-6xl md:text-7xl font-serif font-bold text-white mb-10 leading-[0.95]">
-              Participez <br/> <span className="text-[#2E7D32] italic">avec Jésus</span>
+            <h2 className="text-6xl md:text-7xl font-title font-black text-white mb-10 leading-[0.95]">
+              Participez <br/> <span className="font-script text-[#2E7D32] italic lowercase capitalize">avec Jésus</span>
             </h2>
             <p className="text-blue-50/70 text-xl mb-12 leading-relaxed max-w-lg font-light italic">
               "Que vous soyez croyant ou non, vous êtes invité à marcher avec nous. C'est totalement gratuit et ouvert à tout le monde."
