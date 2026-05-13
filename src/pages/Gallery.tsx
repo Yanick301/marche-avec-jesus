@@ -41,20 +41,18 @@ export default function GalleryPage() {
         </div>
 
         {/* Video Integration Section */}
-        <div className="mb-32 rounded-[60px] overflow-hidden relative aspect-video bg-slate-900 shadow-2xl group cursor-pointer">
-           <img 
-            src="/gallery/magnific_a-group-of-young-people-m_2975740623.png" 
-            alt="Video Preview" 
-            className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-all duration-1000"
-          />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center shadow-2xl group-hover:scale-110 transition-all">
-              <Play className="w-8 h-8 text-[#005BA1] fill-current ml-1" />
-            </div>
-          </div>
-          <div className="absolute bottom-12 left-12">
+        <div className="mb-32 rounded-[60px] overflow-hidden relative shadow-2xl bg-slate-900 group">
+          <video 
+            className="w-full aspect-video object-cover"
+            controls
+            poster="/gallery/magnific_a-group-of-young-people-m_2975740623.png"
+          >
+            <source src="/gallery/marche-jesus.mp4" type="video/mp4" />
+            Votre navigateur ne supporte pas la lecture de vidéos.
+          </video>
+          <div className="absolute top-12 left-12 pointer-events-none group-hover:opacity-0 transition-opacity">
             <p className="text-[10px] uppercase tracking-[0.4em] font-black text-white/60 mb-2">À la une</p>
-            <h3 className="text-3xl font-serif font-bold text-white">Documentaire : L'impact de la 3ème édition</h3>
+            <h3 className="text-3xl font-serif font-bold text-white">Édition Spéciale : Marche avec Jésus</h3>
           </div>
         </div>
 
