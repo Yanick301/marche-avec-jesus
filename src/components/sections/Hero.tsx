@@ -7,22 +7,22 @@ export default function Hero() {
   return (
     <div className="flex flex-col">
       {/* Background Image Header */}
-      <section className="relative h-[60vh] md:h-[80vh] w-full overflow-hidden">
-        <div 
-          className="absolute inset-0 z-0 bg-cover bg-center transition-transform duration-1000"
-          style={{ 
-            backgroundImage: "url('/fond.jpg')",
-            backgroundPosition: "center 30%",
-          }}
-        />
-        {/* Top overlay for navbar visibility */}
-        <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/30 to-transparent z-[1]" />
-        {/* Soft overlay to blend with the white section below */}
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent" />
+      <section className="relative w-full bg-white overflow-hidden">
+        <div className="relative w-full">
+          <img 
+            src="/fond.jpg" 
+            alt="Marche avec JESUS"
+            className="w-full h-auto block"
+          />
+          {/* Top overlay for navbar visibility */}
+          <div className="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/40 to-transparent z-[1]" />
+          {/* Soft overlay at the bottom for smooth transition */}
+          <div className="absolute inset-x-0 bottom-0 h-24 md:h-48 bg-gradient-to-t from-white via-white/40 to-transparent" />
+        </div>
       </section>
 
       {/* Hero Content Section (Post-Image) */}
-      <section className="relative z-10 text-center px-6 py-20 max-w-6xl mx-auto bg-white">
+      <section className="relative z-10 text-center px-6 pb-20 pt-10 max-w-6xl mx-auto bg-white">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
