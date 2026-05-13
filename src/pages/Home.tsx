@@ -61,10 +61,10 @@ export default function Home() {
             >
               <span className="text-[10px] uppercase tracking-[0.5em] font-black text-[#2E7D32] mb-6 block">Édition Spéciale</span>
               <h2 className="text-5xl md:text-6xl font-title font-black text-[#0F172A] mb-8 leading-tight">
-                Zoom sur la <span className="font-script text-[#005BA1] italic lowercase capitalize">4ème Éditions</span>
+                Zoom sur la <span className="font-script text-[#005BA1] italic lowercase capitalize">4ème Édition</span>
               </h2>
               <p className="text-lg text-slate-600 mb-10 leading-relaxed font-light">
-                Cette année, nous élevons le pas. Découvrez le nouveau parcours traversant Abomey, 
+                Cette année, nous élevons le pas. Découvrez le nouveau parcours allant de Bohicon (SHB) à Abomey, 
                 les animations spirituelles prévues et comment vous préparer au mieux pour cette journée historique.
               </p>
               <div className="flex flex-col sm:flex-row gap-6">

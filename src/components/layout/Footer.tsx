@@ -28,11 +28,11 @@ export default function Footer() {
             <div className="flex gap-16">
               <div>
                 <p className="text-[10px] uppercase tracking-[0.4em] font-black text-[#2E7D32] mb-4">Emplacement</p>
-                <p className="text-sm font-bold text-[#0F172A]">Place Goho, Abomey</p>
+                <p className="text-sm font-bold text-[#0F172A]">Bohicon - Abomey</p>
               </div>
               <div>
-                <p className="text-[10px] uppercase tracking-[0.4em] font-black text-[#2E7D32] mb-4">Fondation</p>
-                <p className="text-sm font-bold text-[#0F172A]">20 Mai • 08:00</p>
+                <p className="text-[10px] uppercase tracking-[0.4em] font-black text-[#2E7D32] mb-4">ÉDITION 2026</p>
+                <p className="text-sm font-bold text-[#0F172A]">30 Mai • 08:00</p>
               </div>
             </div>
           </div>
@@ -63,7 +63,10 @@ export default function Footer() {
                 contact@marcheavecjesus.bj
               </li>
               <li className="text-sm font-bold text-[#0F172A]">
-                +229 01 00 00 00 01
+                +229 01 51 87 87 87
+              </li>
+              <li className="text-sm font-bold text-[#0F172A]">
+                +229 01 97 08 71 73
               </li>
               <li className="pt-6">
                 <Link to="/contact" className="inline-block px-4 py-2 border border-blue-50 bg-blue-50/50 text-[#005BA1] text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
@@ -90,7 +93,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="text-[10px] uppercase tracking-[0.4em] font-black text-slate-400">
-            © {currentYear} • MARCHE AVEC JESUS • ABOMEY
+            © {currentYear} • MARCHE AVEC JESUS • BOHICON - ABOMEY
           </div>
         </div>
       </div>

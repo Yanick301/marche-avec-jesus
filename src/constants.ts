@@ -8,8 +8,10 @@ export const COLORS = {
 
 export const EVENT_DETAILS = {
   name: "Marche avec JESUS",
-  date: "20 Mai 2026",
+  date: "30 Mai 2026",
   time: "08:00",
-  location: "Place Goho, Abomey",
-  googleMapsLink: "https://www.google.com/maps/search/Place+Goho+Abomey",
+  location: "Bohicon - Abomey",
+  departure: "SHB Bohicon",
+  arrival: "Place Goho, Abomey",
+  googleMapsLink: "https://www.google.com/maps/search/SHB+Bohicon",
 };

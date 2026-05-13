@@ -7,12 +7,12 @@ export default function CurrentEdition() {
     {
       icon: MapPin,
       title: "Parcours 2026",
-      desc: "Départ de la Place Goho, traversée des quartiers historiques et arrivée au Stade d'Abomey."
+      desc: "Lieu de départ : SHB Bohicon. Atterrissage (Point de chute) : Place Goho d'Abomey."
     },
     {
       icon: Clock,
       title: "Horaires",
-      desc: "Rassemblement à 07:30. Départ officiel à 08:30 précises. Fin prévue vers 13:00."
+      desc: "Rassemblement à 07:00. Départ officiel à 08:00 précises. Fin prévue vers 13:00."
     },
     {
       icon: Music,
@@ -47,7 +47,7 @@ export default function CurrentEdition() {
               La 4ème <br /> <span className="text-[#2E7D32] italic">Destination</span>.
             </h1>
             <p className="text-2xl text-slate-600 font-light leading-relaxed mb-12">
-              Le 20 Mai 2026, Abomey vibrera d'une énergie nouvelle. Joignez-vous à 10 000 participants 
+              Le 30 Mai 2026, Bohicon et Abomey vibreront d'une énergie nouvelle. Joignez-vous à 10 000 participants 
               pour cette marche historique placée sous le signe de la Paix Infinitésimale.
             </p>
             <div className="flex gap-8">
@@ -61,7 +61,7 @@ export default function CurrentEdition() {
               <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000" alt="4th Edition" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-10 -left-10 bg-[#005BA1] p-10 rounded-[40px] text-white shadow-2xl">
-              <p className="text-5xl font-serif font-bold">20</p>
+              <p className="text-5xl font-serif font-bold">30</p>
               <p className="text-[10px] uppercase tracking-widest font-black opacity-60">Mai 2026</p>
             </div>
           </div>

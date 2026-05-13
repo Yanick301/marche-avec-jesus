@@ -39,7 +39,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <p className="text-[10px] uppercase tracking-widest font-black text-slate-400 mb-1">Téléphone & WhatsApp</p>
-                  <p className="text-lg font-bold text-[#0F172A]">+229 01 00 00 00 01</p>
+                  <p className="text-lg font-bold text-[#0F172A]">+229 01 51 87 87 87</p>
+                  <p className="text-lg font-bold text-[#0F172A]">+229 01 97 08 71 73</p>
                 </div>
               </div>
 

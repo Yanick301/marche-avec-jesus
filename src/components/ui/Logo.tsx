@@ -10,45 +10,27 @@ interface LogoProps {
 export default function Logo({ isScrolled, className = "", dark = false }: LogoProps) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
-      <div className="relative">
-        <motion.div
-          animate={{ 
-            scale: isScrolled ? 0.9 : 1,
-          }}
-          className={`w-10 h-10 md:w-14 md:h-14 rounded-xl flex items-center justify-center relative overflow-hidden ${
-            dark ? "bg-[#0F172A]" : "bg-white"
-          } shadow-lg`}
-        >
-          {/* Decorative background elements */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-[#005BA1]/10 to-[#2E7D32]/10" />
-          
-          <div className="relative flex items-center justify-center">
-            <Footprints 
-              className={`w-6 h-6 md:w-8 md:h-8 ${dark ? "text-white" : "text-[#005BA1]"}`}
-              strokeWidth={2.5}
-            />
-            <motion.div
-              animate={{ 
-                y: [0, -2, 0],
-              }}
-              transition={{ repeat: Infinity, duration: 3, ease: "easeInOut" }}
-              className="absolute -top-1 -right-1"
-            >
-              <div className="w-2 h-2 bg-[#2E7D32] rounded-full shadow-[0_0_8px_#2E7D32]" />
-            </motion.div>
-          </div>
-        </motion.div>
-      </div>
+      <motion.div
+        animate={{ 
+          scale: isScrolled ? 0.85 : 1,
+        }}
+        className={`w-14 h-14 md:w-20 md:h-20 rounded-xl overflow-hidden flex items-center justify-center transition-all bg-white p-1.5 shadow-lg border border-slate-100`}
+      >
+        <img 
+          src="/logo.jpg" 
+          alt="Marche avec JESUS Logo" 
+          className="w-full h-full object-contain"
+        />
+      </motion.div>
 
       <div className="flex flex-col">
-        <span className={`text-lg md:text-xl leading-tight tracking-tight ${
-          isScrolled || dark ? "text-[#0F172A]" : "text-white drop-shadow-md"
+        <span className={`text-lg md:text-2xl leading-none tracking-tight font-title font-black uppercase ${
+          isScrolled || dark ? "text-[#005BA1]" : "text-[#005BA1] md:text-white md:drop-shadow-lg"
         }`}>
-          <span className="font-script text-[#2E7D32] lowercase italic capitalize mr-1">Marche</span>
-          <span className="font-title font-black uppercase text-[0.8em]">avec <span className="text-[#005BA1]">JESUS</span></span>
+          Marche avec JESUS
         </span>
-        <span className={`text-[8px] md:text-[10px] font-title font-black uppercase tracking-[0.3em] ${
-          isScrolled || dark ? "text-slate-400" : "text-white/70"
+        <span className={`text-[8px] md:text-[11px] font-title font-black uppercase tracking-[0.3em] ${
+          isScrolled || dark ? "text-[#2E7D32]" : "text-[#2E7D32] bg-white/90 px-2 py-0.5 rounded-full inline-block w-fit mt-1 shadow-sm"
         }`}>
           Le Messie
         </span>
