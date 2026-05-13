@@ -89,7 +89,7 @@ export default function Home() {
               className="relative aspect-video rounded-[40px] overflow-hidden shadow-2xl"
             >
               <img 
-                src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000" 
+                src="/gallery/magnific_a-group-of-young-people-m_2975740607.png" 
                 alt="Preparation" 
                 className="w-full h-full object-cover"
               />

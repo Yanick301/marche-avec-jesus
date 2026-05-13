@@ -3,12 +3,12 @@ import { Youtube, Play, Image as ImageIcon } from "lucide-react";
 
 export default function GalleryPage() {
   const images = [
-    "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=800",
-    "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=801",
-    "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=802",
-    "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=803",
-    "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=804",
-    "https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=805",
+    "/gallery/magnific_a-group-of-young-people-m_2975712824.png",
+    "/gallery/magnific_a-group-of-young-people-m_2975712853.png",
+    "/gallery/magnific_a-group-of-young-people-m_2975740607.png",
+    "/gallery/magnific_a-group-of-young-people-m_2975740623.png",
+    "/gallery/magnific_a-group-of-young-people-m_2975748875.png",
+    "/gallery/magnific_a-group-of-young-people-m_2975748885.png",
   ];
 
   return (
@@ -43,7 +43,7 @@ export default function GalleryPage() {
         {/* Video Integration Section */}
         <div className="mb-32 rounded-[60px] overflow-hidden relative aspect-video bg-slate-900 shadow-2xl group cursor-pointer">
            <img 
-            src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=2000" 
+            src="/gallery/magnific_a-group-of-young-people-m_2975740623.png" 
             alt="Video Preview" 
             className="w-full h-full object-cover opacity-60 group-hover:scale-105 transition-all duration-1000"
           />

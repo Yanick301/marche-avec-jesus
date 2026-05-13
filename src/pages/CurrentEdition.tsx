@@ -58,7 +58,7 @@ export default function CurrentEdition() {
           </div>
           <div className="relative">
             <div className="aspect-square rounded-[60px] overflow-hidden shadow-2xl border-[16px] border-white">
-              <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000" alt="4th Edition" className="w-full h-full object-cover" />
+              <img src="/gallery/magnific_a-group-of-young-people-m_2975740623.png" alt="4th Edition" className="w-full h-full object-cover" />
             </div>
             <div className="absolute -bottom-10 -left-10 bg-[#005BA1] p-10 rounded-[40px] text-white shadow-2xl">
               <p className="text-5xl font-serif font-bold">30</p>

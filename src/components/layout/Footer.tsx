@@ -41,8 +41,6 @@ export default function Footer() {
             <h4 className="text-[10px] uppercase tracking-[0.4em] font-black text-slate-400 mb-12">Explorer</h4>
             <ul className="space-y-6">
               {[
-                { name: "L'Événement", href: "/a-propos" },
-                { name: "Archives", href: "/editions-precedentes" },
                 { name: "4ème Édition", href: "/4eme-edition" },
                 { name: "Galerie", href: "/galerie" },
                 { name: "Blog", href: "/blog" },

@@ -54,7 +54,7 @@ export default function AboutPage() {
         <div className="grid lg:grid-cols-2 gap-24 mb-40 items-center">
           <div className="aspect-[4/5] rounded-[60px] overflow-hidden shadow-2xl relative">
             <img 
-              src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000" 
+              src="/gallery/magnific_a-group-of-young-people-m_2975712824.png" 
               alt="Vision" 
               className="w-full h-full object-cover"
             />

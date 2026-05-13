@@ -36,7 +36,7 @@ export default function Hero() {
           </div>
           
           <h1 className="text-6xl md:text-[120px] font-title font-black text-[#0F172A] mb-10 leading-[0.8] tracking-tighter">
-            <span className="font-script text-[#2E7D32] lowercase italic capitalize tracking-normal block mb-4 md:mb-0">Marche</span>
+            <span className="font-script text-[#2E7D32] lowercase italic capitalize tracking-normal block text-7xl md:text-[160px] -mb-4 md:-mb-10">Marche</span>
             avec <span className="text-[#005BA1]">JESUS</span>
           </h1>
 
@@ -51,16 +51,6 @@ export default function Hero() {
               >
                 S'inscrire gratuitement
               </Button>
-            </Link>
-            <Link to="/a-propos">
-              <button 
-                className="flex items-center gap-6 text-[#0F172A] font-black group transition-all"
-              >
-                <div className="w-16 h-16 rounded-full border-2 border-[#005BA1]/10 flex items-center justify-center group-hover:border-[#005BA1] group-hover:bg-[#005BA1]/5 transition-all duration-500">
-                  <div className="w-3 h-3 bg-[#005BA1] rounded-full shadow-[0_0_10px_#005BA1]" />
-                </div>
-                <span className="text-xs uppercase tracking-[0.3em]">Découvrir la Marche</span>
-              </button>
             </Link>
           </div>
 

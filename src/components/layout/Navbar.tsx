@@ -20,8 +20,6 @@ export default function Navbar() {
 
   const navLinks = [
     { name: "Accueil", href: "/" },
-    { name: "À Propos", href: "/a-propos" },
-    { name: "Archives", href: "/editions-precedentes" },
     { name: "4ème Édition", href: "/4eme-edition" },
     { name: "Galerie", href: "/galerie" },
     { name: "Blog", href: "/blog" },

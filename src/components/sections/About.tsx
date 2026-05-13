@@ -47,7 +47,7 @@ export default function About() {
           >
             <div className="aspect-[4/5] overflow-hidden rounded-[60px] shadow-[0_40px_100px_rgba(0,0,0,0.1)] relative z-10 border-[12px] border-white bg-white">
               <img 
-                src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?auto=format&fit=crop&q=80&w=1000" 
+                src="/gallery/magnific_a-group-of-young-people-m_2975712853.png" 
                 alt="Marche spirituelle" 
                 className="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
